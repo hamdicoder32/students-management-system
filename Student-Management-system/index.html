@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student-Management-system</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fontawasome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header star-->
+    <header class="header">
+      <h1>🎓 Student Management System</h1>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- aside start -->
+      <aside class="sidebar">
+        <h2>Add Student</h2>
+
+        <form id="student-form">
+          <label>Name</label>
+          <input type="text" id="name" />
+
+          <label>Age</label>
+          <input type="number" id="age" />
+
+          <label>Mark</label>
+          <input type="number" id="mark" />
+
+          <button type="submit">
+            <i class="fa-solid fa-plus"></i>Add Student
+          </button>
+        </form>
+      </aside>
+      <!-- aside end -->
+      <!-- section start -->
+      <section class="content">
+        <div class="cards">
+          <div class="card total-students">
+            <div class="detail">
+              <i class="fa-solid fa-users"></i>
+              <h3>Total Students</h3>
+            </div>
+
+            <p id="total-students">0</p>
+          </div>
+          <div class="card marks">
+            <div class="detail">
+              <i class="fa-solid fa-book-open"></i>
+              <h3>Total Marks</h3>
+            </div>
+
+            <p id="total-marks">0</p>
+          </div>
+
+          <div class="card average">
+            <div class="detail">
+              <i class="fa-solid fa-trophy"></i>
+              <h3>Average Marks</h3>
+            </div>
+
+            <p id="average-marks">0</p>
+          </div>
+        </div>
+        <div class="search" id="search">
+          <input type="text" placeholder="Search student..." id="searchInput" />
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Mark</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="student-list">
+              <td></td>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- section end -->
+    </main>
+    <!-- main end -->
+
+    <!-- javascript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
